@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">南京汤山若水路宠物风格地图</title>
+  <desc id="desc">可爱清新的宠物插画风地图，标记沐爪宠物洗护店位置。</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf9f3" />
+      <stop offset="55%" stop-color="#f7fbfa" />
+      <stop offset="100%" stop-color="#fff8ec" />
+    </linearGradient>
+    <linearGradient id="riverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fd8ff" />
+      <stop offset="100%" stop-color="#73c8f7" />
+    </linearGradient>
+    <linearGradient id="parkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cff3d5" />
+      <stop offset="100%" stop-color="#ddf8de" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#15393f" flood-opacity="0.2" />
+    </filter>
+    <style>
+      .road-major { stroke: #c7d5dd; stroke-width: 16; fill: none; stroke-linecap: round; }
+      .road-minor { stroke: #dbe5eb; stroke-width: 9; fill: none; stroke-linecap: round; }
+      .road-small { stroke: #e7eef2; stroke-width: 5; fill: none; stroke-linecap: round; }
+      .water { fill: url(#riverGrad); }
+      .district-line { stroke: #d2e7da; stroke-width: 4; fill: none; stroke-dasharray: 8 8; opacity: 0.8; }
+      .label-main {
+        fill: #4c676d;
+        font-size: 16px;
+        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 700;
+      }
+      .label-water {
+        fill: #2d9ac3;
+        font-size: 15px;
+        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 700;
+      }
+      .label-store {
+        fill: #134c4a;
+        font-size: 20px;
+        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 800;
+      }
+      .poi {
+        fill: #ffffff;
+        stroke: #b8c9d3;
+        stroke-width: 2;
+      }
+      .poi-dot {
+        fill: #82b5ca;
+      }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="920" height="520" fill="url(#bgGrad)" />
+
+  <path
+    d="M0 0H640V520H0Z"
+    fill="url(#parkGrad)"
+    opacity="0.85"
+  />
+  <rect x="640" y="0" width="280" height="520" fill="#f9f5e9" opacity="0.92" />
+
+  <path class="water" d="M190 -20c42 70 50 137 25 210-17 49-6 109 22 154 31 50 41 92 36 176h-76c8-72-8-116-40-164-31-45-40-111-22-168 24-73 12-142-23-208h78Z" />
+  <path class="water" d="M840 170c25 35 28 72 10 112-10 24-8 50 6 71 11 17 17 34 17 54h-44c1-20-4-35-16-53-18-27-21-58-9-88 13-34 12-67 0-96h36Z" opacity="0.85" />
+
+  <path class="district-line" d="M284 36v440" />
+  <path class="district-line" d="M604 24v472" />
+  <path class="district-line" d="M640 0v520" />
+
+  <path class="road-major" d="M0 268H920" />
+  <path class="road-major" d="M426 26c-8 117-10 224-3 332 3 58 11 111 23 162" />
+  <path class="road-major" d="M678 26c-8 101-11 193-7 292 2 63 2 132-4 202" />
+
+  <path class="road-minor" d="M92 0c-20 84-24 171-15 252 7 77 23 154 14 268" />
+  <path class="road-minor" d="M546 38c8 150 6 298 0 482" />
+  <path class="road-minor" d="M640 122H915" />
+  <path class="road-minor" d="M640 178H915" />
+  <path class="road-minor" d="M640 236H915" />
+  <path class="road-minor" d="M640 294H915" />
+  <path class="road-minor" d="M640 352H915" />
+
+  <path class="road-small" d="M640 92h76" />
+  <path class="road-small" d="M640 148h120" />
+  <path class="road-small" d="M640 206h96" />
+  <path class="road-small" d="M640 264h82" />
+  <path class="road-small" d="M640 322h124" />
+  <path class="road-small" d="M640 380h98" />
+  <path class="road-small" d="M720 84v308" />
+  <path class="road-small" d="M770 74v316" />
+  <path class="road-small" d="M820 86v306" />
+
+  <g opacity="0.9">
+    <rect x="748" y="103" width="22" height="16" rx="4" fill="#e8f1f8" />
+    <rect x="781" y="161" width="20" height="14" rx="4" fill="#e8f1f8" />
+    <rect x="697" y="220" width="24" height="16" rx="4" fill="#e8f1f8" />
+    <rect x="846" y="278" width="22" height="14" rx="4" fill="#e8f1f8" />
+    <rect x="744" y="334" width="20" height="14" rx="4" fill="#e8f1f8" />
+  </g>
+
+  <g opacity="0.8">
+    <path d="M309 206c8-12 24-12 32 0-8 12-24 12-32 0Z" fill="#a8e4bf" />
+    <circle cx="328" cy="250" r="9" fill="#9adcb2" />
+    <circle cx="351" cy="217" r="7" fill="#9adcb2" />
+    <path d="M336 298c8-12 24-12 32 0-8 12-24 12-32 0Z" fill="#a8e4bf" />
+  </g>
+
+  <g>
+    <circle class="poi" cx="310" cy="208" r="7" />
+    <circle class="poi-dot" cx="310" cy="208" r="2.8" />
+    <circle class="poi" cx="715" cy="187" r="7" />
+    <circle class="poi-dot" cx="715" cy="187" r="2.8" />
+    <circle class="poi" cx="788" cy="260" r="7" />
+    <circle class="poi-dot" cx="788" cy="260" r="2.8" />
+  </g>
+
+  <text class="label-main" x="354" y="248">若水路</text>
+  <text class="label-main" x="458" y="324" transform="rotate(89 458 324)">绕斗路</text>
+  <text class="label-main" x="700" y="336" transform="rotate(90 700 336)">上圣路</text>
+  <text class="label-water" x="210" y="316" transform="rotate(74 210 316)">汤水河</text>
+
+  <path d="M474 212 446 236" stroke="#507175" stroke-width="2.5" stroke-linecap="round" />
+  <rect x="474" y="186" width="282" height="48" rx="22" fill="#ffffff" stroke="#d2dde4" stroke-width="1.8" filter="url(#softShadow)" />
+  <text class="label-store" x="492" y="217">沐爪宠物洗护店</text>
+
+  <g transform="translate(394 206)" filter="url(#softShadow)">
+    <ellipse cx="32" cy="95" rx="29" ry="10" fill="#18393f" opacity="0.22" />
+    <path
+      d="M32 0C15 0 2 13.4 2 30c0 25.8 30 61.5 30 61.5S62 55.8 62 30C62 13.4 49 0 32 0Z"
+      fill="#ff7e70"
+      stroke="#db5a4d"
+      stroke-width="2.5"
+    />
+    <circle cx="32" cy="31" r="15.5" fill="#fffef8" />
+    <g fill="#19ab8c">
+      <circle cx="25.6" cy="24.6" r="3.4" />
+      <circle cx="32" cy="21.5" r="3.4" />
+      <circle cx="38.4" cy="24.6" r="3.4" />
+      <path d="M32 28c-5.5 0-9.2 3.2-9.2 6.7 0 3 2.8 5.5 9.2 5.5s9.2-2.5 9.2-5.5c0-3.5-3.7-6.7-9.2-6.7Z" />
+    </g>
+  </g>
+
+  <g transform="translate(38 435)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="280" height="52" rx="18" fill="rgba(255,255,255,0.95)" />
+    <text x="18" y="32" fill="#134c4a" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">
+      南京市江宁区汤山街道若水路2号
+    </text>
+  </g>
+</svg>
