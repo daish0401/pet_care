@@ -226,6 +226,16 @@
       background: var(--ink);
     }
 
+    .booking-submit {
+      color: var(--white);
+      background: linear-gradient(135deg, #22b887, #167f5d);
+      box-shadow: 0 14px 30px rgba(22, 127, 93, 0.28);
+    }
+
+    .booking-submit:hover {
+      box-shadow: 0 18px 34px rgba(22, 127, 93, 0.34);
+    }
+
     .btn-outline {
       color: var(--ink);
       border-color: var(--line);
@@ -664,7 +674,7 @@
       padding: 28px;
       border-radius: 8px;
       color: var(--white);
-      background: var(--ink);
+      background: linear-gradient(165deg, #1ea77c 0%, #0f6b4f 100%);
       box-shadow: var(--shadow);
     }
 
