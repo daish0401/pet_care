@@ -722,9 +722,11 @@
 
     .location-layout {
       display: grid;
-      grid-template-columns: 360px 1fr;
-      gap: 24px;
+      grid-template-columns: 1fr;
+      gap: 20px;
       align-items: stretch;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .location-card {
@@ -798,27 +800,40 @@
       font-weight: 800;
     }
 
+    .pet-map-link {
+      display: block;
+      border-radius: 8px;
+    }
+
+    .pet-map-link:focus-visible {
+      outline: 3px solid rgba(23, 168, 135, 0.42);
+      outline-offset: 3px;
+    }
+
     .pet-map {
       margin: 0;
-      min-height: 430px;
+      height: clamp(320px, 52vw, 560px);
       position: relative;
       border: 1px solid var(--line);
       border-radius: 8px;
       overflow: hidden;
-      background: #e9f0f5;
+      background: #eff5f8;
       box-shadow: var(--shadow);
     }
 
     .baidu-map-wrap {
       position: absolute;
       inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 14px;
     }
 
     .baidu-map-image {
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
     }
 
@@ -990,7 +1005,7 @@
       }
 
       .pet-map {
-        min-height: 390px;
+        height: clamp(300px, 58vw, 500px);
       }
 
       .gallery {
@@ -1093,7 +1108,7 @@
       }
 
       .pet-map {
-        min-height: 320px;
+        height: clamp(260px, 74vw, 400px);
       }
 
       .footer .wrap {
@@ -1557,7 +1572,7 @@
             <p class="location-address">南京市江宁区汤山街道若水路2号</p>
             <ul class="location-list">
               <li>沿若水路即可直达门店，转角处有醒目的门头。</li>
-              <li>页面内为宠物风格示意图，点按钮可直接打开百度地图导航。</li>
+              <li>页面内为宠物风格示意图，点击地图或按钮可直接打开百度地图导航。</li>
               <li>建议提前 10 分钟到店，方便宠物先适应环境。</li>
             </ul>
             <div class="location-tags">
@@ -1567,25 +1582,27 @@
             </div>
             <a class="btn btn-dark" href="https://map.baidu.com/search/%E5%8D%97%E4%BA%AC%E5%B8%82%E6%B1%9F%E5%AE%81%E5%8C%BA%E6%B1%A4%E5%B1%B1%E8%A1%97%E9%81%93%E8%8B%A5%E6%B0%B4%E8%B7%AF2%E5%8F%B7" target="_blank" rel="noopener">百度地图导航</a>
           </article>
-          <figure class="pet-map" aria-label="AI 宠物风格地图：南京江宁汤山若水路门店位置">
-            <div class="baidu-map-wrap">
-              <img
-                id="baiduMapImage"
-                class="baidu-map-image"
-                src="./assets/pet-map-ai-style.svg"
-                alt="AI 宠物风格地图：沐爪宠物洗护店门店位置"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="baidu-map-fallback" id="baiduMapFallback" hidden>
-                <div>
-                  <strong>地图图片暂时未加载</strong>
-                  <p>请点击左侧“百度地图导航”按钮查看门店位置。</p>
+          <a class="pet-map-link" href="https://map.baidu.com/search/%E5%8D%97%E4%BA%AC%E5%B8%82%E6%B1%9F%E5%AE%81%E5%8C%BA%E6%B1%A4%E5%B1%B1%E8%A1%97%E9%81%93%E8%8B%A5%E6%B0%B4%E8%B7%AF2%E5%8F%B7" target="_blank" rel="noopener" aria-label="点击地图在百度地图中打开门店位置">
+            <figure class="pet-map" aria-label="AI 宠物风格地图：南京江宁汤山若水路门店位置">
+              <div class="baidu-map-wrap">
+                <img
+                  id="baiduMapImage"
+                  class="baidu-map-image"
+                  src="./assets/pet-map-ai-style.svg"
+                  alt="AI 宠物风格地图：沐爪宠物洗护店门店位置"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="baidu-map-fallback" id="baiduMapFallback" hidden>
+                  <div>
+                    <strong>地图图片暂时未加载</strong>
+                    <p>请点击地图区域，跳转百度地图查看门店位置。</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <figcaption>南京市江宁区汤山街道若水路2号</figcaption>
-          </figure>
+              <figcaption>南京市江宁区汤山街道若水路2号 · 点击地图导航</figcaption>
+            </figure>
+          </a>
         </div>
       </div>
     </section>
