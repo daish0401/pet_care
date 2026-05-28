@@ -222,8 +222,15 @@
     }
 
     .btn-dark {
+      background: var(--mint-strong);
+    }
+
+    .btn-dark,
+    .btn-dark:visited,
+    .btn-dark:hover,
+    .btn-dark:focus-visible,
+    .btn-dark:active {
       color: var(--white);
-      background: var(--ink);
     }
 
     .booking-submit {
